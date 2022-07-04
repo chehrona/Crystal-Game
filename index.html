@@ -2,11 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Crystal Game</title>
+    <title>Crystal Collector</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <div id="gameName">
+        <h1>Crystal Collector</h1>
+    </div>
+    <div class="outerBox" id="instructionsBox">
+        <h3 class="secondaryTitles">Instructions</h3>
+        <p id="instructions">You will be given a random number at the start of the game. There are four crystals below.
+            By clicking on a crystal you will add a specific amount of points to your total score.
+            You win the game by matching your total score to random number, you lose the game if your
+            total score goes above the random number. The value of each crystal is hidden from you until
+            you click on it. Each time when the game starts, the game will change the values of each crystal.</p>
+    </div>
+    <div id="thirdRow">
+    <div class="outerBox" id="targetScoreBox">
+        <h3 class="secondaryTitles">Target Score</h3>
+        <p class="scores" id="targetNumber">0</p>
+    </div>
+    <div class="outerBox" id="yourScoreBox">
+        <h3 class="secondaryTitles">Your Score</h3>
+        <p class="scores" id="yourNumber">0</p>
+    </div>
+    <div class="outerBox" id="gemBox">
+        <h3 class="secondaryTitles">Crystal Selection</h3>
+            <img class="gems" id="gem1" src="assets/images/gem1.gif">
+            <img class="gems" id="gem2" src="assets/images/gem2.gif">
+            <img class="gems" id="gem3" src="assets/images/gem3.gif">
+            <img class="gems" id="gem4" src="assets/images/gem4.gif">
+    </div>
+        </div>
+    <div id="fourthRow">
+     <div class="outerBox" id="winBox">
+        <h3 class="secondaryTitles">Win Count</h3>
+        <p class="scores" id="wins">0</p>
+    </div>
+    <div class="outerBox" id="lossBox">
+        <h3 class="secondaryTitles">Loss Count</h3>
+        <p class="scores" id="losses">0</p>
+    </div>
+        </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
